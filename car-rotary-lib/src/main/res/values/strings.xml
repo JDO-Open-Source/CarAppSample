@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="car_ui_restricted_while_driving">For your safety, this function is unavailable while driving.</string>
+</resources>

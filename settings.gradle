@@ -1,0 +1,23 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+rootProject.name = "CarAppSample"
+include ':car-uxr-client-lib'
+include ':car-ui-lib'
+include ':car-ui-lib'
+project(':car-ui-lib').projectDir = new File('./car-ui-lib')
+include ':oem-apis'
+project(':oem-apis').projectDir = new File('./oem-apis')
+include ':shared-library'
+project(':shared-library').projectDir = new File('./referencedesign/sharedlibrary')
+include ':car-rotary-lib'
+include ':car-apps-common'
+include ':car-media-common'
+include ':car-arch-common'
+include ':CarMediaApp'
+include ':PaintBooth'
